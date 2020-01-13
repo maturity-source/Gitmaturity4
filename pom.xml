@@ -1,23 +1,34 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
 
+     
   <groupId>demo</groupId>
   <artifactId>TestP</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
-
+  
+ 
   <name>HelloWorld</name>
   <url>http://maven.apache.org</url>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+  
+ 
+  <name>HelloWorld</name>
+  <url>http://maven.apache.org</url>
+
+
      <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
     <sonar.jacoco.reportPath>target/jacoco-ut.exec</sonar.jacoco.reportPath>
-    <sonar.jacoco.itReportPaths>target/jacoco-it.exec</sonar.jacoco.itReportPaths>
+    <sonar.jacoco.itReportPaths>C:\Users\yolande.kegne\eclipse-workspace\HelloWorld\target/jacoco-it.exec</sonar.jacoco.itReportPaths>
+    <sonar.coverage.jacoco.xmlReportPaths>C:\Users\yolande.kegne\eclipse-workspace\HelloWorld\target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
   </properties>
-
+  
+ 
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -26,9 +37,15 @@
       <scope>test</scope>
     </dependency>
     
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.0.0</version>
+    <scope>test</scope>
+</dependency>
   
   </dependencies>
-  
   
   <dependencyManagement>
   	<dependencies>
@@ -38,7 +55,15 @@
   			<version>0.8.5</version>
   			<scope>test</scope>
   		</dependency>
-  		
+  		<!-- https://mvnrepository.com/artifact/org.jacoco/org.jacoco.agent -->
+<dependency>
+    <groupId>org.jacoco</groupId>
+    <artifactId>org.jacoco.agent</artifactId>
+    <version>0.8.5</version>
+    <scope>test</scope>
+</dependency>
   	</dependencies>
   </dependencyManagement>
+
+  
 </project>
