@@ -8,9 +8,9 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
-        sh 'jenkins/build'
+        sh 'jenkins/build.bat'
       }
     }
 
