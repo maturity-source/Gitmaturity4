@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build 1') {
       steps {
-        sh 'jenkins/build.bat'
+        sh 'Jenkins\\workspace\\Gitmaturity4_master\\jenkins\\build.bat'
       }
     }
 
