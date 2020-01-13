@@ -4,7 +4,13 @@ pipeline {
     stage('build 1') {
       agent any
       steps {
-        sh 'jenkins\\build.bat'
+        echo 'lkljkjk'
+      }
+    }
+
+    stage('') {
+      steps {
+        sh 'jenkins/build'
       }
     }
 
