@@ -9,8 +9,9 @@ pipeline {
     }
 
     stage('error') {
+      agent any
       steps {
-        sh 'jenkins/build.bat'
+        sh 'echo bonjour'
       }
     }
 
